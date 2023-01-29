@@ -77,7 +77,7 @@
                 <div class="move">
                     <div class="button1">
     
-                        <a href="/enc/"><button type="button"><svg class="encrypt-svg" 
+                        <a href="/enc"><button type="button"><svg class="encrypt-svg" 
                             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
                              viewBox="0 0 24 24"><path fill="white" d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2m6 
                              3V10H6v10h12m0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 
@@ -86,7 +86,7 @@
                     </div>
     
                     <div class="button2">
-                        <a href="/dec/"><button type="button"><svg class="decrypt-svg" xmlns="http://www.w3.org/2000/svg" 
+                        <a href="/dec"><button type="button"><svg class="decrypt-svg" xmlns="http://www.w3.org/2000/svg" 
                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                             <path fill="white" d="M18 20V10H6v10h12m0-12a2 2 0 0 1 2 
                             2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h9V6a3 
