@@ -66,7 +66,7 @@
             <div class="move">
                 <div class="button1">
 
-                    <a href="/file_enc/"><button type="button"><svg class="file" xmlns="http://www.w3.org/2000/svg" 
+                    <a href="/file_enc"><button type="button"><svg class="file" xmlns="http://www.w3.org/2000/svg" 
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
                         <path fill="white" d="M928 444H820V330.4c0-17.7-14.3-32-32-32H473L355.7 186.2a8.15 8.15 0 0 0-5.5-2.2H96c-17.7 0-32 14.3-32 32v592c0 
                         17.7 14.3 32 32 32h698c13 0 24.8-7.9 29.7-20l134-332c1.5-3.8 2.3-7.9 2.3-12c0-17.7-14.3-32-32-32zm-180 0H238c-13 0-24.8 
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="button3">
-                    <a href="/share_txt/"><button type="button"><svg class="text" xmlns="http://www.w3.org/2000/svg" 
+                    <a href="/share_txt"><button type="button"><svg class="text" xmlns="http://www.w3.org/2000/svg" 
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="white" 
                         d="M14 18H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h2.4l1.7 3l1.7-1l-2.3-4H4v-6h10v6h-3v2h3c1.1 
                         0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm5 8h2c3.9 0 7-3.1 7-7v-2h-2v2c0 2.8-2.2 5-5 
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="button4">
-                    <a href="/text_enc/"><button type="button"><svg class="encryp" xmlns="http://www.w3.org/2000/svg"
+                    <a href="/text_enc"><button type="button"><svg class="encryp" xmlns="http://www.w3.org/2000/svg"
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="white" 
                         d="M29 21.278V19a4 4 0 0 0-8 0v2.278A1.994 1.994 0 0 0 20 23v5a2.002 
                         2.002 0 0 0 2 2h6a2.002 2.002 0 0 0 2-2v-5a1.994 1.994 0 0 0-1-1.722zM25 
