@@ -31,9 +31,9 @@
                     </svg>
 
                     <ul>
-                        <li><a href="/home/">Home</a></li>
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
                         @if (Route::has('register'))
                             <li>
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
