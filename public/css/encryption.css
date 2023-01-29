@@ -1,0 +1,174 @@
+body {
+  background: #201F1F;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.title .logo_start {
+  float: left;
+  margin-top: 0.3rem;
+  margin-right: 0.5em;
+  width: 1.3em;
+}
+.title .logo_start path {
+  fill: white;
+}
+.title .logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #2C2C2C;
+  height: 100vh;
+  width: 40%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+nav ul a {
+  color: white;
+  padding: 0.75em 2em;
+  display: block;
+  text-decoration: none;
+}
+nav ul a:hover {
+  background: #414141;
+  font-weight: bold;
+}
+nav .close {
+  float: right;
+  margin: 1em;
+  width: 2em;
+}
+nav .close path {
+  fill: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu {
+  width: 1.7em;
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+
+.post-container {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  margin-top: 3em;
+  height: 72vh;
+  padding: 20px 20px;
+}
+
+.undo a {
+  color: white;
+  text-decoration: none;
+}
+
+.input-container {
+  text-align: center;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color: white;
+  margin-top: 1em;
+}
+.input-container label {
+  font-size: 0.8rem;
+}
+.input-container .form-group {
+  padding: 30px 20px;
+}
+.input-container .form-group .para {
+  word-wrap: break-word;
+}
+.input-container .form-control {
+  width: 100%;
+  height: 5vh;
+}
+.input-container button {
+  margin-top: 0em;
+  border-radius: 15px;
+  border: solid;
+  border-color: white;
+  background-color: #1c1c1c;
+  padding: 6px 8px;
+  width: 20%;
+  color: white;
+  cursor: pointer;
+}
+.input-container button:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
+.input-container p {
+  text-align: left;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .center {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  .post-container {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-top: 3em;
+    height: 60vh;
+    width: 43%;
+    padding: 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=encryption.css.map */

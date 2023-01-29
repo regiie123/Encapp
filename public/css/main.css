@@ -1,0 +1,263 @@
+body {
+  background: #201F1F;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.title .logo_start {
+  float: left;
+  margin-top: 0.3rem;
+  margin-right: 0.5em;
+  width: 1.3em;
+}
+.title .logo_start path {
+  fill: white;
+}
+.title .logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #2C2C2C;
+  height: 100vh;
+  width: 40%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+nav ul a {
+  color: white;
+  padding: 0.75em 2em;
+  display: block;
+  text-decoration: none;
+}
+nav ul a:hover {
+  background: #414141;
+  font-weight: bold;
+}
+nav .close {
+  float: right;
+  margin: 1em;
+  width: 2em;
+}
+nav .close path {
+  fill: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu {
+  width: 1.7em;
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+
+.allcontainer {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  margin-top: 3em;
+  height: 75vh;
+  padding: 20px 20px;
+}
+
+.center {
+  margin-top: 0.1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 64.5%;
+}
+
+.container {
+  margin-top: 0.1em;
+}
+.container input[type=text], .container input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container label {
+  color: white;
+  font-weight: bold;
+}
+.container a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 2em;
+}
+.container .button-container {
+  margin-left: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.container .button-container button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px 20px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 12px;
+  border-width: 0;
+  cursor: pointer;
+  width: 90%;
+  font-weight: bold;
+}
+.container .button-container button:hover {
+  background: #616161;
+  color: white;
+}
+.container .button-container button:hover a {
+  color: white;
+}
+.container .button-container button a {
+  color: rgb(0, 0, 0);
+}
+.container .login-desk {
+  display: none;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+  .allcontainer {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-top: 3em;
+    height: 73.5vh;
+    padding: 20px 20px;
+  }
+  .center {
+    position: relative;
+    top: -0.5em;
+    width: 55%;
+  }
+  .container {
+    position: relative;
+    top: -0.5em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .center {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  .allcontainer {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-top: 3em;
+    height: 60vh;
+    padding: 20px 20px;
+  }
+  .container {
+    margin-top: 0.1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+  }
+  .container .input-box {
+    margin-top: 3em;
+  }
+  .container input[type=text], .container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .container label {
+    color: white;
+    font-weight: bold;
+  }
+  .container a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: 2em;
+  }
+  .container .button-container {
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .container .button-container button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 12px;
+    border-width: 0;
+    cursor: pointer;
+    width: 90%;
+    font-weight: bold;
+  }
+  .container .button-container button:hover {
+    background: #616161;
+    color: white;
+  }
+  .container .button-container button:hover a {
+    color: white;
+  }
+  .container .button-container button a {
+    color: rgb(0, 0, 0);
+  }
+  .container .login-desk {
+    display: block;
+    grid-area: left;
+    margin-top: 3em;
+    padding: 5px 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
