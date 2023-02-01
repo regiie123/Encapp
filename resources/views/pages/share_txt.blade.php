@@ -135,11 +135,11 @@
 
 <script>
         function GFG_Fun() {
-            const textarea = document.getElementById('input');
+            const textarea = document.getElementById('foo');
             let badwords = /a55|ass|bitch|b!tch|b1tch|damn|fuck|f u c k|fucked|fucker|goddamn|piece of shit|mothafucker|motherfucker|mother fucker|n1gga|nigga|porn|porno|pornography|sh1t|shit|amputa|animal ka|bobo|demonyo ka|gaga|gagi|gago|hayop ka|hayup|hinayupak|kagaguhan|kaululan|kingina|kupal|leche|nimal|ogag|pakshet|pakyu|pesteng yawa|pukinangina|puta|putang ina|putangina|putanginamo|putragis|taena|tanga|tangina|ulol|ulul/gi;
             let censor1 = textarea.value;
             let censor2 = censor1.replace(badwords,'*****');
-            document.getElementById('input').value = censor2;;
+            document.getElementById('foo').value = censor2;;
         }
 </script>
 </body>
