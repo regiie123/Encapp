@@ -16,8 +16,8 @@ class CreateEncsTable extends Migration
         Schema::create('encs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('encString');
-            $table->string('decString')->nullable();
+            $table->mediumText('encString')->nullable();
+            $table->mediumText('decString')->nullable();
             $table->string('passWord');
         });
     }
