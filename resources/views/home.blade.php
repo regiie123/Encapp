@@ -76,23 +76,29 @@
                 </div>
 
                 <div class="button2">
-                <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();"><button type="button"><svg class="image" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="white" d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h7v2H5v14h7v2Zm11-4l-1.375-1.45l2.55-2.55H9v-2h8.175l-2.55-2.55L16 7l5 5Z"/></svg>Log out</button>
+                    <a href="/banned"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" class="file"  viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm12-36a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm49.7-57.7a8.1 8.1 0 0 1 0 11.4a8.2 8.2 0 0 1-11.4 0L168 123.3l-10.3 10.4a8.2 8.2 0 0 1-11.4 0a8.1 8.1 0 0 1 0-11.4l10.4-10.3l-10.4-10.3a8.1 8.1 0 0 1 11.4-11.4l10.3 10.4l10.3-10.4a8.1 8.1 0 0 1 11.4 11.4L179.3 112Zm-80-20.6L99.3 112l10.4 10.3a8.1 8.1 0 0 1 0 11.4a8.2 8.2 0 0 1-11.4 0L88 123.3l-10.3 10.4a8.2 8.2 0 0 1-11.4 0a8.1 8.1 0 0 1 0-11.4L76.7 112l-10.4-10.3a8.1 8.1 0 0 1 11.4-11.4L88 100.7l10.3-10.4a8.1 8.1 0 0 1 11.4 11.4Z"/></svg> Chat Ban List </button>
                     </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
                 </div>
-
+                
+                @if($pass === 1)
                 <div class="button3">
-                    <a href="/share_txt"><button type="button"><svg class="text" xmlns="http://www.w3.org/2000/svg" 
+                    <a href="#" onclick="GFG_Fun()"><button type="button"><svg class="text" xmlns="http://www.w3.org/2000/svg" 
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="white" 
                         d="M14 18H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h2.4l1.7 3l1.7-1l-2.3-4H4v-6h10v6h-3v2h3c1.1 
                         0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm5 8h2c3.9 0 7-3.1 7-7v-2h-2v2c0 2.8-2.2 5-5 
                         5h-2v2zm-1-15h6v2h-6zm0-4h12v2H18zm0-4h12v2H18zM4 14h2v-2c0-2.8 2.2-5 
-                        5-5h4V5h-4c-3.9 0-7 3.1-7 7v2z"/></svg>Share a Text</button></a>
+                        5-5h4V5h-4c-3.9 0-7 3.1-7 7v2z"/></svg>Chat with Users</button></a>
                 </div>
+                @else
+                <div class="button3">
+                    <a href="/choose_chat"><button type="button"><svg class="text" xmlns="http://www.w3.org/2000/svg" 
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="white" 
+                        d="M14 18H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h2.4l1.7 3l1.7-1l-2.3-4H4v-6h10v6h-3v2h3c1.1 
+                        0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm5 8h2c3.9 0 7-3.1 7-7v-2h-2v2c0 2.8-2.2 5-5 
+                        5h-2v2zm-1-15h6v2h-6zm0-4h12v2H18zm0-4h12v2H18zM4 14h2v-2c0-2.8 2.2-5 
+                        5-5h4V5h-4c-3.9 0-7 3.1-7 7v2z"/></svg>Chat with Users</button></a>
+                </div>
+                @endif
 
                 <div class="button4">
                     <a href="/text_enc"><button type="button"><svg class="encryp" xmlns="http://www.w3.org/2000/svg"
@@ -126,6 +132,20 @@
         })
     </script>
 
+    <script>
+        var msg = '{{Session::get('alert')}}';
+        var exist = '{{Session::has('alert')}}';
+        if(exist){
+        alert(msg);
+        }
+    </script>
+
+    <script>
+        function GFG_Fun() {
+            window.alert("You have been banned from using chat!");
+            return false;
+        }
+    </script>
     
 </body>
 </html>

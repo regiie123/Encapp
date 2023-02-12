@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $userId = Auth::id();
+        $info = User::find($userId);
+        if($info->ban === 3){
+            $pass = 1;
+            return view('home')->with('pass', $pass);
+
+        }
+        else{
+            $pass = 0;
+            return view('home')->with('pass', $pass);
+        }
     }
 }

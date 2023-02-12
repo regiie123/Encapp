@@ -32,7 +32,14 @@ Route::post('/file_enc_upload', [PagesController::class, 'file_enc_upload']);
 Route::patch('/file_enc_enter/{file_id}', [PagesController::class, 'file_enc_enter']);
 
 Route::get('/share_txt', [PagesController::class, 'share_txt']);
+Route::get('/choose_chat', [PagesController::class, 'choose_chat']);
+Route::get('/chat/{id}', [PagesController::class, 'chat']);
+Route::post('/chat_retrieve/{to_id}', [PagesController::class, 'chat_retrieve']);
+Route::post('/chat_send/{to_id}', [PagesController::class, 'chat_send']);
 Route::post('/share_txt_upload', [PagesController::class, 'share_txt_upload']);
+
+
+Route::get('/banned', [PagesController::class, 'banned']);
 
 Route::get('/about', [PagesController::class, 'about']);
 
